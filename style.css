@@ -30,6 +30,10 @@ main h1 {
   font-family: kugile;
   font-weight: 500;
 }
+main a {
+  text-decoration: none;
+  color: white;
+}
 main .card {
   background-color: rgba(0, 128, 0, 0.289);
   display: inline-block;
@@ -90,7 +94,10 @@ main .card .bottom .link {
   transition: all ease 0.5s;
   bottom: 0;
   padding: 20px;
-  gap: 260%;
+}
+main .card .bottom .link .linkedin-link {
+  position: inherit;
+  left: 365%;
 }
 main .card .bottom .link a {
   text-decoration: none;

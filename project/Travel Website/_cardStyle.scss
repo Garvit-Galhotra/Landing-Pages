@@ -1,0 +1,27 @@
+@mixin cardStyle(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    .icon{
+        position: absolute;
+        font-size: 3rem;
+        color: rgb(195, 45, 45);
+    }
+    .content{
+        padding: 0 20px;
+        width: 25%;
+        
+    }
+    button{
+        position: absolute;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: none;
+        font-size: 1.25rem;
+        font-weight: 100;
+        font-family: uni-sans;
+        color: white;
+    }
+}
