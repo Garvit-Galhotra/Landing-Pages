@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        width: 12%;
+
+
+        h1{
+            color: red;
+            background-color: white;
+            border-radius: 50%;
+            width: 20%;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        h2{
+            width: 100%;
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-weight: 100;
+        justify-content: center;
+        h4 i{
+            font-size: 1.5rem;
+        }
+
+        h4 img{
+            height: 1.5rem;
+            text-align: center;
+    
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 10px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.trvl-media.com/lodging/96000000/95340000/95332000/95331919/6f8c1f93.jpg?impolicy=fcrop&w=1200&h=800&quality=medium);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+
+    .nav2{
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        top: 10%;
+        left: 20%;
+        height: 7%;
+        margin-top: 1.5%;
+
+        .white-content{
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 100%;
+            color: rgba(0, 0, 0, 0.5);
+            clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+            padding: 10px;
+            
+            h4{
+                font-weight: 500;
+            }
+            #home{
+                color: red;
+                font-weight: 600;
+            }
+            
+            
+        }
+        
+        .red-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            height: 100%;
+            width: 30%;
+             clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+            color: white;
+
+            h4{
+                // font-size: 0.99rem;
+                font-weight: 200;
+                padding: 20px;
+            }
+        }
+    }
+
+    .top-layer{
+        position: absolute;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+}
